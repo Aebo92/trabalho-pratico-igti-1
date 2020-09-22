@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Mostrador de cores</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Mostrador de cores</h1>
+    </div>
+    <div id="container">
+      <div class="cores">
+        <label for="vermelho">Vermelho</label>
+        <input
+          type="range"
+          name="vermelho"
+          id="cor-vermelha"
+          min="0"
+          max="255"
+        />
+        <input
+          type="text"
+          readonly="readonly"
+          class="indicador-vermelho"
+          value="0"
+        />
+      </div>
+      <div class="cores">
+        <label for="verde">Verde</label>
+        <input type="range" name="verde" id="cor-verde" min="0" max="255" />
+        <input
+          type="text"
+          readonly="readonly"
+          class="indicador-verde"
+          value="0"
+        />
+      </div>
+      <div class="cores">
+        <label for="azul">Azul</label>
+        <input type="range" name="azul" id="cor-azul" min="0" max="255" />
+        <input
+          type="text"
+          readonly="readonly"
+          class="indicador-azul"
+          value="0"
+        />
+      </div>
+      <div class="card-background">
+        <div class="card-background-color"></div>
+        <h2 class="card-background-text"></h2>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
